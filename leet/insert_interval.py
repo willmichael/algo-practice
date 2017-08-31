@@ -7,19 +7,14 @@
 class Solution(object):
     def insert(self, intervals, newInterval):
         i = 0
-        while i <= len(intervals)-1:
+        while i <= len(intervals):
             if i == len(intervals):
-                print 'hihi'
                 intervals.insert(i, newInterval)
                 break
             elif intervals[i].start > newInterval.start:
                 intervals.insert(i, newInterval)
                 break
             i += 1
-        # if len(intervals) < 1:
-            # return intervals
-        print len(intervals)
-        print i
         i = 0
         while i < len(intervals)-1:
             if len(intervals) < 2:
