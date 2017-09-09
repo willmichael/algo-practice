@@ -3,6 +3,7 @@
 #     def __init__(self, x):
 #         self.label = x
 #         self.neighbors = []
+sys.setrecursionlimit(2000)
 
 class Solution:
     # @param node, a undirected graph node
